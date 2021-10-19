@@ -6,8 +6,8 @@ chmod +x /usr/local/bin/v2ray-exporter
 # 安装promethus
 wget -O /tmp/prometheus.tar.gz https://github.com/prometheus/prometheus/releases/download/v2.30.3/prometheus-2.30.3.linux-amd64.tar.gz
 tar -xvzf prometheus.tar.gz
-mv /tmp/prometheus-2.30.3.linux-amd64/prometheus /usr/local/bin/promethus
-chmod +x /usr/local/bin/promethus
+mv /tmp/prometheus-2.30.3.linux-amd64/prometheus /usr/local/bin/prometheus
+chmod +x /usr/local/bin/prometheus
 echo "安装程序完成"
 # 安装必要配置
 mkdir -p /etc/prometheus

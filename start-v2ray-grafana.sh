@@ -18,3 +18,4 @@ echo "安装配置完成"
 nohup v2ray-exporter --v2ray-endpoint "127.0.0.1:10080" > /var/log/v2ray-exporter.log 2>&1 &
 nohup prometheus --config.file /etc/prometheus/prometheus.yml --web.external-url=/v2ray > /var/log/prometheus.log 2>&1 &
 echo "启动服务结束"
+rm -rf /tmp/prometheus.tar.gz /tmp/prometheus-2.30.3.linux-amd64/prometheus
